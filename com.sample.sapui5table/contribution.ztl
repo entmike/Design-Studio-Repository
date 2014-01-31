@@ -1,0 +1,8 @@
+class com.sample.sapui5table.SAPUI5Table extends Component {
+	/**
+ 	 Use to get Concatenated Dimension of row clicked
+  	*/
+	String getRowClicked() {*
+		return this.rowClicked;
+	*}
+}

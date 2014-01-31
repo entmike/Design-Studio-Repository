@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SAP UI5 Table
+Bundle-SymbolicName: com.sample.sapui5table;singleton:=true
+Bundle-Version: 1.0
+Require-Bundle: com.sap.ip.bi.zen.rt.components.sdk.eclipse
+Bundle-Vendor: SAP

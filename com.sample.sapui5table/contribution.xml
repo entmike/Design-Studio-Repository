@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension xmlns="http://www.sap.com/bi/zen/sdk"
+	title="SAP UI5 Table"
+	version="1.0"
+	vendor="SAP"
+	id="com.sample.sapui5table">
+	<component id="SAPUI5Table"
+		title="SAP UI5 Table"
+		icon="res/icon.png"
+		handlerType="div"
+		propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html"
+		databound="true">
+
+		<stdInclude kind="cvom" />
+		<jsInclude>res/js/component.js</jsInclude>
+
+		<property id="column1" type="ResultCellList" title="Column 1" group="DataBinding"/>
+		<property id="column2" type="ResultCellList" title="Column 2" group="DataBinding"/>
+		<property id="column3" type="ResultCellList" title="Column 3" group="DataBinding"/>
+		<property type="ScriptText" title="On Row Click" id="onclick" group="Events"></property>
+		<property type="String" title="Row Clicked" id="rowClicked" visible="false"></property>
+		
+		<initialization>
+			<defaultValue property="WIDTH">100</defaultValue>
+			<defaultValue property="HEIGHT">100</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>
