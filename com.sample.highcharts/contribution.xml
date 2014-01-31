@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension xmlns="http://www.sap.com/bi/zen/sdk"
+	id="com.sample.highcharts"
+	title="High Charts"
+	version="1.0"
+	vendor="Mike Howles"
+	>
+	<component id="HighCharts" 
+		title="High Charts"
+		icon="res/icon.png"
+		handlerType="div"
+		propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html"
+		databound="true">
+		<stdInclude kind="cvom"></stdInclude>
+		<stdInclude kind="d3"/>
+		<jsInclude>res/js/component.js</jsInclude>
+		<jsInclude>res/js/dummyData.js</jsInclude>
+		<jsInclude>res/js/chartConfigs.js</jsInclude>
+		<jsInclude>res/js/highcharts.js</jsInclude>
+		<jsInclude>res/js/highcharts-more.js</jsInclude>
+		<jsInclude>res/js/highChartsWrapper.js</jsInclude>
+		<jsInclude>res/js/no-data-to-display.js</jsInclude>
+		<cssInclude>res/css/component.css</cssInclude>
+		<property type="boolean" title="Use Dummy Data when no DataSource" id="useDummyData"></property>
+		<property type="String" title="Visualization Type" id="visMethod">
+			<possibleValue>Line Chart</possibleValue>
+			<possibleValue>Spline Chart</possibleValue>
+			<possibleValue>Area Chart</possibleValue>
+			<possibleValue>Stacked Area Chart</possibleValue>
+			<possibleValue>Stacked Area Chart - 100%</possibleValue>
+			<possibleValue>Bar Chart</possibleValue>
+			<possibleValue>Stacked Bar Chart</possibleValue>
+			<possibleValue>Stacked Bar Chart - 100%</possibleValue>
+			<possibleValue>Column Chart</possibleValue>
+			<possibleValue>Stacked Column Chart</possibleValue>
+			<possibleValue>Stacked Column Chart - 100%</possibleValue>
+			<possibleValue>Scatter Chart</possibleValue>
+			<possibleValue>Bubble Chart</possibleValue>
+			<possibleValue>JSON Dump</possibleValue>
+		</property>
+		<property type="boolean" title="Floating Legend" id="floatLegend"></property>
+		<property type="String" title="Legend Layout" id="legendLayout">
+			<possibleValue>vertical</possibleValue>
+			<possibleValue>horizontal</possibleValue>
+		</property>
+		<property type="String" title="Legend Alignment" id="legendAlign">
+			<possibleValue>left</possibleValue>
+			<possibleValue>center</possibleValue>
+			<possibleValue>right</possibleValue>
+		</property>
+		<property type="String" title="Legend Vertical Alignment" id="legendVerticalAlign">
+			<possibleValue>top</possibleValue>
+			<possibleValue>middle</possibleValue>
+			<possibleValue>bottom</possibleValue>
+		</property>
+		<property type="String" title="Excess Dimension Handling" id="excessDimensions">
+			<possibleValue>Filter</possibleValue>
+			<possibleValue>Concatenate (Unimplemented)</possibleValue>
+			<possibleValue>Group (Unimplemented)</possibleValue>
+			<possibleValue>Aggregate (Unimplemented)</possibleValue>
+		</property>
+		<property type="int" title="X-Axis Label Rotation" id="xAxisRotation"></property>
+		<property id="dataResultCellSet" type="ResultCellSet" title="Chart Selection" tooltip="Optional - Select certain rows or columns of Query Results" group="DataBinding"/>		
+		<property type="String" title="Series By" id="groupBy" visible="false"></property>
+		<property type="String" title="Axis By" id="colsBy" visible="false"></property>
+		<initialization>
+			<defaultValue property="HEIGHT">200</defaultValue>
+			<defaultValue property="useDummyData">true</defaultValue>
+			<defaultValue property="floatLegend">false</defaultValue>
+			<defaultValue property="legendAlign">right</defaultValue>
+			<defaultValue property="legendVerticalAlign">top</defaultValue>
+			<defaultValue property="legendLayout">vertical</defaultValue>
+			<defaultValue property="xAxisRotation">0</defaultValue>
+			<defaultValue property="WIDTH">300</defaultValue>
+			<defaultValue property="groupBy">NONE</defaultValue>
+			<defaultValue property="colsBy">NONE</defaultValue>
+			<defaultValue property="visMethod">Line Chart</defaultValue>
+			<defaultValue property="excessDimensions">Filter</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>
