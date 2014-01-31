@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Toolbar Menu
+Bundle-SymbolicName: com.sample.menu;singleton:=true
+Bundle-Version: 2.0
+Require-Bundle: com.sap.ip.bi.zen.rt.components.sdk.eclipse
+Bundle-Vendor: Mike Howles

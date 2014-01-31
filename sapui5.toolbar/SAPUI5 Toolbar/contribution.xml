@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension xmlns="http://www.sap.com/bi/zen/sdk"
+	id="com.sample.menu"
+	title="Toolbar Menu"
+	version="2.0"
+	vendor="Mike Howles"
+	>
+	<component id="ToolbarMenu"
+		title="Toolbar Menu"
+		icon="res/icon.png"
+		handlerType="sapui5"
+		propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html">
+		<jsInclude>res/js/component.js</jsInclude>
+		<cssInclude>res/css/component.css</cssInclude>
+		<property type="boolean" title="Enabled" id="enabled"></property>
+		<property type="String" title="Design" id="design">
+			<possibleValue>Flat</possibleValue>
+			<possibleValue>Standard</possibleValue>
+			<possibleValue>Transparent</possibleValue>
+		</property>
+		<property type="String" title="Show Button Titles" id="showCaptions">
+			<possibleValue>X</possibleValue>
+			<possibleValue></possibleValue>
+		</property>
+		<!--  BIAL Stuff  -->
+		<property type="ScriptText" title="On Click" id="onclick" group="Events"></property>	
+		<property type="int" title="Button Clicked" id="buttonClicked" visible="false"></property>
+		<property type="String" title="Button Clicked Title" id="buttonClickedTitle" visible="false"></property>	
+		
+		<!--  Yo, SAP - Can we maybe eventually have Array support?  Just sayin...  -->
+		<property type="String" title="Title 0" id="title0"></property>
+		<property type="boolean" title="Enabled 0" id="enabled0"></property>
+		<property type="boolean" title="Visible 0" id="visible0"></property>
+		<property type="Url" title="Icon 0" id="icon0"></property>
+		
+		<property type="String" title="Title 1" id="title1"></property>
+		<property type="boolean" title="Enabled 1" id="enabled1"></property>
+		<property type="boolean" title="Visible 1" id="visible1"></property>
+		<property type="Url" title="Icon 1" id="icon1"></property>
+		
+		<property type="String" title="Title 2" id="title2"></property>
+		<property type="boolean" title="Enabled 2" id="enabled2"></property>
+		<property type="boolean" title="Visible 2" id="visible2"></property>
+		<property type="Url" title="Icon 2" id="icon2"></property>
+		
+		<property type="String" title="Title 3" id="title3"></property>
+		<property type="boolean" title="Enabled 3" id="enabled3"></property>
+		<property type="boolean" title="Visible 3" id="visible3"></property>
+		<property type="Url" title="Icon 3" id="icon3"></property>
+		
+		<property type="String" title="Title 4" id="title4"></property>
+		<property type="boolean" title="Enabled 4" id="enabled4"></property>
+		<property type="boolean" title="Visible 4" id="visible4"></property>
+		<property type="Url" title="Icon 4" id="icon4"></property>
+		
+		<property type="String" title="Title 5" id="title5"></property>
+		<property type="boolean" title="Enabled 5" id="enabled5"></property>
+		<property type="boolean" title="Visible 5" id="visible5"></property>
+		<property type="Url" title="Icon 5" id="icon5"></property>
+		
+		<property type="String" title="Title 6" id="title6"></property>
+		<property type="boolean" title="Enabled 6" id="enabled6"></property>
+		<property type="boolean" title="Visible 6" id="visible6"></property>
+		<property type="Url" title="Icon 6" id="icon6"></property>
+		
+		<property type="String" title="Title 7" id="title7"></property>
+		<property type="boolean" title="Enabled 7" id="enabled7"></property>
+		<property type="boolean" title="Visible 7" id="visible7"></property>
+		<property type="Url" title="Icon 7" id="icon7"></property>
+		
+		<property type="String" title="Title 8" id="title8"></property>
+		<property type="boolean" title="Enabled 8" id="enabled8"></property>
+		<property type="boolean" title="Visible 8" id="visible8"></property>
+		<property type="Url" title="Icon 8" id="icon8"></property>
+		
+		<property type="String" title="Title 9" id="title9"></property>
+		<property type="boolean" title="Enabled 9" id="enabled9"></property>
+		<property type="boolean" title="Visible 9" id="visible9"></property>
+		<property type="Url" title="Icon 9" id="icon9"></property>
+		
+		<initialization>
+			<defaultValue property="HEIGHT">25</defaultValue>
+			<defaultValue property="WIDTH">250</defaultValue>
+			<defaultValue property="design">Flat</defaultValue>
+			<defaultValue property="enabled">true</defaultValue>
+			<defaultValue property="showCaptions">X</defaultValue>
+						
+			<defaultValue property="visible0">true</defaultValue>
+			<defaultValue property="visible1">true</defaultValue>
+			<defaultValue property="visible2">true</defaultValue>
+			<defaultValue property="visible3">true</defaultValue>
+			<defaultValue property="visible4">true</defaultValue>
+			<defaultValue property="visible5">true</defaultValue>
+			<defaultValue property="visible6">true</defaultValue>
+			<defaultValue property="visible7">true</defaultValue>
+			<defaultValue property="visible8">true</defaultValue>
+			<defaultValue property="visible9">true</defaultValue>
+			
+			<defaultValue property="enabled0">true</defaultValue>
+			<defaultValue property="enabled1">true</defaultValue>
+			<defaultValue property="enabled2">true</defaultValue>
+			<defaultValue property="enabled3">true</defaultValue>
+			<defaultValue property="enabled4">true</defaultValue>
+			<defaultValue property="enabled5">true</defaultValue>
+			<defaultValue property="enabled6">true</defaultValue>
+			<defaultValue property="enabled7">true</defaultValue>
+			<defaultValue property="enabled8">true</defaultValue>
+			<defaultValue property="enabled9">true</defaultValue>
+			
+			<!--
+			Example Properties
+			
+			<defaultValue property="title0">Open Query</defaultValue>
+			<defaultValue property="icon0">data:image/gif;base64,R0lGODlhEAAPALMLAAAAAIAAAICAAI+n0dnu+f/wnr+/v2ZmZkBAQP////8AAAAAAAAAAAAAAAAAAAAAACH5BAEAAAsALAAAAAAQAA8AAARPcIFJq5Upa6I1wEQYDmJofEBSEmR5gmUrvgA73MOh7weqloeCUCjwrYLDQlFiwx0UUGjACEwqqSLkcFnD3Z5RxRSWtXIN6DRCwG6jLHBKBAA7</defaultValue>
+			<defaultValue property="title1">Variables</defaultValue>
+			<defaultValue property="icon1">data:image/gif;base64,R0lGODlhEAAPAPf1AAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDcwKbK8JkAAMQAJv9mZv+Zmf/MzFMAXYFUkKWGs9S+3gAoVgA9hFxqpo+SwMzM/wBBawBjpFmEvY+n0cbW8wAAiAAAqjOZ/47N8Nnu+SRNDDJsEU2mGYzAbLPTm0RZAF99AJLAALjSa9HfnFBQHmZmM5mZZszMmf//1nlwAKqdAOjSWP/rAP/wnm5HAJpkAP9mAP+ZAPezV//MM1Y1DW5KIKZ+Tsefbf/Mmebm5tnZ2b+/v6amppmZmYyMjGZmZkBAQG+MnP/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////78KCgpICAgP8AAAD/AP//AAAA//8A/wD//wAAACH5BAEAAP0ALAAAAAAQAA8AAAhzAAEIHEiwYD8ANBDSSEhDhsOHAJIglIEQgIyGDx1GVEjxIsaMGxda5JiRosSEFyl+hHhyocuXLjeKmElTBA0FOEVKFKGkZ08ROJMElVlzZpIkNxVI3Onz58KgCXcWtXkzptSiT5FGLciVYJJ+R8OKHZskIAA7</defaultValue>		
+			<defaultValue property="title2">Toggle Filter Panel</defaultValue>
+			<defaultValue property="icon2">data:image/gif;base64,R0lGODlhEAAPAPEAAMDAwADgAgcHBwAAACH5BAEAAAAALAAAAAAQAA8AAQIohI9pwu2+gpxUiljzxdkm0QXbpykHODUmNo6keK5oK1tqDa/nrfdAAQA7</defaultValue>
+			-->
+		</initialization>
+	</component>
+</sdkExtension>

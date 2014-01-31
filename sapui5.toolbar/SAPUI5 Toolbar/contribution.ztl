@@ -1,0 +1,40 @@
+class com.sample.menu.ToolbarMenu extends Component {
+	void setProperty( /* Button Index */ int index, /* Property */ String property, /* Value */ String value){*
+		this[property+index] = value;
+	*}
+	void setTitle( /* Button Title */ String s, /* Index */ int index){*
+		this["title"+index] = s;
+	*}
+	
+	/**
+	Use to determine if toolbar captions are visible
+	
+	<returns>
+	X if component is enabled or blank if component is disabled.
+	</returns>
+  	*/
+	String getCaptionVisibility(){*
+		return this.showCaptions;
+	*}
+	
+	/**
+ 	 Use to set toolbar caption visibility
+  	*/
+	void setCaptionVisibility( /* Show */ String s){*
+		this.showCaptions = s;
+	*}
+	
+	/**
+ 	 Use to determine last button clicked on toolbar
+  	*/
+	int getButtonClickedIndex() {*
+		return this.buttonClicked;
+	*}
+	
+	/**
+ 	 Use to determine last button clicked on toolbar
+  	*/
+	String getButtonClickedTitle() {*
+		return this.buttonClickedTitle;
+	*}
+}
