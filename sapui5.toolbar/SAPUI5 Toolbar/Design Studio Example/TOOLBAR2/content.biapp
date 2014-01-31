@@ -1,0 +1,77 @@
+<bi:biapp bi:version="1200" xmlns:bi="http://xml.sap.com/2011/biml/biapp" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/TR/REC-html40" xmlns:h="http://www.w3.org/TR/REC-html40" xmlns:sdk1="com.sample.menu" sdk1:version="2.0">
+	<bi:component name="APPLICATION_PROPERTIES" type="APPLICATION_PROPERTIES">
+		<bi:property name="THEME" value="sap_goldreflection"/>
+	</bi:component>
+	<bi:component name="ROOT" type="ABSOLUTE_LAYOUT_COMPONENT">
+		<bi:component name="TOOLBARMENU_1" type="com_sample_menu_ToolbarMenu">
+			<bi:property name="LEFT_MARGIN" value="0"/>
+			<bi:property name="TOP_MARGIN" value="0"/>
+			<bi:property name="title0" value="Open Query"/>
+			<bi:property name="icon0" value="data:image/gif;base64,R0lGODlhEAAPALMLAAAAAIAAAICAAI+n0dnu+f/wnr+/v2ZmZkBAQP////8AAAAAAAAAAAAAAAAAAAAAACH5BAEAAAsALAAAAAAQAA8AAARPcIFJq5Upa6I1wEQYDmJofEBSEmR5gmUrvgA73MOh7weqloeCUCjwrYLDQlFiwx0UUGjACEwqqSLkcFnD3Z5RxRSWtXIN6DRCwG6jLHBKBAA7"/>
+			<bi:property name="WIDTH" value="auto"/>
+			<bi:property name="RIGHT_MARGIN" value="0"/>
+			<bi:property name="HEIGHT" value="25"/>
+			<bi:property name="BOTTOM_MARGIN" value="auto"/>
+			<bi:property name="design" value="Standard"/>
+			<bi:property name="title1" value="Variables"/>
+			<bi:property name="title2" value="Show Filters"/>
+			<bi:property name="title3" value="sep"/>
+			<bi:property name="title4" value=""/>
+			<bi:property name="icon1" value="data:image/gif;base64,R0lGODlhEAAPAPf1AAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDcwKbK8JkAAMQAJv9mZv+Zmf/MzFMAXYFUkKWGs9S+3gAoVgA9hFxqpo+SwMzM/wBBawBjpFmEvY+n0cbW8wAAiAAAqjOZ/47N8Nnu+SRNDDJsEU2mGYzAbLPTm0RZAF99AJLAALjSa9HfnFBQHmZmM5mZZszMmf//1nlwAKqdAOjSWP/rAP/wnm5HAJpkAP9mAP+ZAPezV//MM1Y1DW5KIKZ+Tsefbf/Mmebm5tnZ2b+/v6amppmZmYyMjGZmZkBAQG+MnP/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////78KCgpICAgP8AAAD/AP//AAAA//8A/wD//wAAACH5BAEAAP0ALAAAAAAQAA8AAAhzAAEIHEiwYD8ANBDSSEhDhsOHAJIglIEQgIyGDx1GVEjxIsaMGxda5JiRosSEFyl+hHhyocuXLjeKmElTBA0FOEVKFKGkZ08ROJMElVlzZpIkNxVI3Onz58KgCXcWtXkzptSiT5FGLciVYJJ+R8OKHZskIAA7"/>
+			<bi:property name="icon2" value="data:image/gif;base64,R0lGODlhEAAPAPEAAMDAwADgAgcHBwAAACH5BAEAAAAALAAAAAAQAA8AAQIohI9pwu2+gpxUiljzxdkm0QXbpykHODUmNo6keK5oK1tqDa/nrfdAAQA7"/>
+			<bi:property name="icon9" value="data:image/gif;base64,R0lGODlhEAAQAPcAAFdXV15eXmhoaHR0dICAgIyMjI2NjZiYmJmZmZqanJ6enqWlpaWlqKqqqqmprqysrKmpsK+vs62ttq+vu7CwsLKysrS0tLa2t7e3t7y8vLy8vb+/v7q6x8LCwsXFxcjIyMnJy8rKyszMzM3Nzs/Pz8fH0czM0M/P0c7O2NLS0tDQ1tHR1tXV19bW1tbW19DQ3tTU2NTU2dTU29TU3dXV3NjY2Nvb29zc3d3d3d7e3tbW4NjY49nZ5N7e493d5d3d59vb6d3d69zc7N7e7eHh4eLi4uXl5eXl5ufn5+np6evr6+7u7uXl9vHx8fLy8vPz8/b29vf39/r6+vv7+/39/f7+/v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAEAAQAAAIzABzCBxIsKDAGiISKlyYsIbAEFaqSJxI0UoIgR+mNIjCsSPHBlI+CPQABcqSIi1StiiyBMoTDwI7NDFiJAWAmwBC2MCBpIPADUoEkgiQIkUADSNGuNggMEOSGyxACCBCRMCFEydYZBCI4QiMFSYGVKgwIMKKFTEwCLTQQ4YMFQSoUCHgwC0NCwIp+NChY0YBJ04KQEDBl4LABz948NjBoGgCCSUUPxC4IAgCIJg5TNj84vICgQeGMBFCujTp0QcEKjDAurVr1goMyiYYEAA7"/>
+			<bi:property name="title9" value="Toggle Captions"/>
+			<bi:property name="onclick">
+				<bi:value><![CDATA[var buttonPressed = TOOLBARMENU_1.getButtonClickedIndex();  // If you like using indexes.
+var buttonLabel = TOOLBARMENU_1.getButtonClickedTitle();
+
+// All code in one script window instead of multiple buttons
+
+if(buttonLabel == "Variables"){ // Open Dialog
+	APPLICATION.openPromptDialog(400, 300);
+}
+if(buttonLabel == "Open Query"){ // Open Dialog
+	POPUP_1.show();
+}
+if(buttonLabel == "Show Filters"){ // Filter Panel
+	FILTERPANEL_1.setVisible(true);
+	TOOLBARMENU_1.setProperty(2, "icon", "data:image/gif;base64,R0lGODlhEAAPAPcAALDd9eH6+sDAwPr6+qWlpQcHBwAAAAAAAGkAZgAAABQAQAYUAAAAAIgQ+xIA8Ij6d0AGFAD/////N5D1d+8S2HcAABQAAAAAAMj4EgAAABQAqET5dyQAAABIDRQAAAAUAFhXFACg+BIAX6bnd+j6EgDwiPp3cDj1d/////+oRPl3cH31dzqK9XcAAAAAAABAADiGSAC4+RIAAAAAAMtE+XdoAxcAzYv1d3gHFAA3kPV3kAMXAHADFwAMrxgAiAIUAPCuGABSpud3Iaznd2gAAAAEwPV3WKTnd+ACFACgrhgAIAAAAAUAAADgAhQAmK4YAAgAAAAiAAAAs5v1d5CuGAAkAAIA4KsYACz6EgAw+hIAAAAAAMtE+XfwrhgAzYv1d9gHFAA3kPV3DK8YAPiuGAAAAAAAN5D1dwUAAAAoAAAAAAAAAA6tGAAAAAAAAAABAAAAFAD8+BIA+AQUAOT5EgDwiPp3iBz1d/////83kPV3VpT2d3GU9nfgRfx3ZJT2d5ADFwBwAxcADK8YAADg/X/M+RIAAQAAACj6EgDwiPp3IBb1d/////9klPZ3hJ32dwcAAAA4AAAA+K4YAAAAAABAARcAuEgBAAAAFAB0+RIAAAAAAHT6EgDwiPp3iBz1d/////83kPV3Ie/ndwAAFAAAAAAALe/nd2S81HcAAEAABQAAAIisGAAA4P1/AABAAAAAAAAAAAAAHAEAAPiuGABE+hIAAAAAALD/EgAJSOl3mBDpd/////8t7+d3XFdDAPiuGABkvNR3AABAACAAAADqttrzTnjDAeq22vNOeMMB6rba8054wwEAAAAAeQAAACQAAAAgAQAAU19CX0ZJTFQuZ2lmAAAAANTM1gBYVxQAAAAUANT4EgAE+xIANPsSAPCI+nd4HPV3/////zqK9XfUpud3AAAUAAgAFADlpud3ZLzUdwAAAAAAAAAAAAAAAAAAAABE2kQApFcUANztFgCoVxQAiIZIAP////9YVxQAntpEAKRXFABz0EQAWFcUACH5BAEAAAIALAAAAAAQAA8AQAhaAAUIHEiwoEEBBQYAKDCQYUMAAwJIDAAAAIGFBxEqdFgw4YCPIEMO4CiwAESKF0kaTIixZMaXJQvInElzZsmTEylWTEnQZESdPA/6rGgzI0uOKhtuLCqU6cCAADs=");
+	TOOLBARMENU_1.setProperty(2, "title", "Hide Filters");
+}
+if(buttonLabel == "Hide Filters"){
+	FILTERPANEL_1.setVisible(false);
+	TOOLBARMENU_1.setProperty(2, "icon", "data:image/gif;base64,R0lGODlhEAAPAPEAAMDAwADgAgcHBwAAACH5BAEAAAAALAAAAAAQAA8AAQIohI9pwu2+gpxUiljzxdkm0QXbpykHODUmNo6keK5oK1tqDa/nrfdAAQA7");
+	TOOLBARMENU_1.setProperty(2, "title", "Show Filters");
+}
+if(buttonLabel == "Toggle Captions"){
+	if(TOOLBARMENU_1.getCaptionVisibility()=="X"){
+		TOOLBARMENU_1.setCaptionVisibility("");	
+	}else{
+		TOOLBARMENU_1.setCaptionVisibility("X");
+	}
+}]]></bi:value>
+			</bi:property>
+		</bi:component>
+		<bi:component name="POPUP_1" type="POPUP_COMPONENT">
+			<bi:property name="LEFT_MARGIN" value="60"/>
+			<bi:property name="TOP_MARGIN" value="131"/>
+			<bi:property name="WIDTH" value="326"/>
+			<bi:property name="ANIMATION" value="FADE"/>
+			<bi:component name="BUTTON_1" type="BUTTON_COMPONENT">
+				<bi:property name="TEXT" value="Dummy Query Open Dialog (click to close)"/>
+				<bi:property name="LEFT_MARGIN" value="28"/>
+				<bi:property name="TOP_MARGIN" value="54"/>
+				<bi:property name="WIDTH" value="268"/>
+				<bi:property name="ON_CLICK">
+					<bi:value><![CDATA[POPUP_1.hide();]]></bi:value>
+				</bi:property>
+			</bi:component>
+		</bi:component>
+		<bi:component name="FILTERPANEL_1" type="FILTERPANEL_COMPONENT">
+			<bi:property name="LEFT_MARGIN" value="426"/>
+			<bi:property name="TOP_MARGIN" value="103"/>
+			<bi:property name="HEIGHT" value="373"/>
+			<bi:property name="VISIBLE" value=""/>
+		</bi:component>
+	</bi:component>
+</bi:biapp>
