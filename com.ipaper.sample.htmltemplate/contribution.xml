@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension xmlns="http://www.sap.com/bi/zen/sdk"
+	id="com.ipaper.sample.htmltemplate"
+	title="HTML Template"
+	version="1.0"
+	vendor="Mike Howles"
+	>
+	<component id="HTMLTemplate"
+		title="HTML Template"
+		icon="res/icon.png"
+		handlerType="div"
+		propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html">
+
+		<jsInclude>res/js/component.js</jsInclude>
+		<jsInclude>http://cdn3.devexpress.com/jslib/13.2.5/js/dx.chartjs.js</jsInclude>
+		<jsInclude>http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js</jsInclude>
+
+		<property id="HTML" type="String" title="HTML" group="Display" />
+		<property id="afterInit" type="String" title="After Init (JS)" group="Display" />
+		<property type="String" title="Placeholder 1" id="term1"></property>
+		<property type="String" title="Replacement 1" id="replacement1"></property>
+		
+		<property type="String" title="Placeholder 2" id="term2"></property>
+		<property type="String" title="Replacement 2" id="replacement2"></property>
+		
+		<property type="String" title="Placeholder 3" id="term3"></property>
+		<property type="String" title="Replacement 3" id="replacement3"></property>
+		
+		<property type="String" title="Placeholder 4" id="term4"></property>
+		<property type="String" title="Replacement 4" id="replacement4"></property>
+		
+		<property type="String" title="Placeholder 5" id="term5"></property>
+		<property type="String" title="Replacement 5" id="replacement5"></property>
+		
+		<property type="String" title="Placeholder 6" id="term6"></property>
+		<property type="String" title="Replacement 6" id="replacement6"></property>
+
+		<property type="String" title="Placeholder 7" id="term7"></property>
+		<property type="String" title="Replacement 7" id="replacement7"></property>
+
+		<property type="String" title="Placeholder 8" id="term8"></property>
+		<property type="String" title="Replacement 8" id="replacement8"></property>
+
+		<property type="String" title="Placeholder 9" id="term9"></property>
+		<property type="String" title="Replacement 9" id="replacement9"></property>
+		
+		<property type="String" title="Placeholder 10" id="term10"></property>
+		<property type="String" title="Replacement 10" id="replacement10"></property>
+		
+		<initialization>
+			<defaultValue property="WIDTH">400</defaultValue>
+			<defaultValue property="HEIGHT">300</defaultValue>
+			<defaultValue property="HTML">HTML Here</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>
